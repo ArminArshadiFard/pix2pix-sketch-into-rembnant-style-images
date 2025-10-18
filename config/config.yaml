@@ -1,0 +1,35 @@
+data:
+  root_dir: "C:/Users/armin/Desktop/pix2pix/data/datasets/rembrandt"
+  batch_size: 4
+  num_workers: 4
+  image_size: 256
+
+model:
+  in_channels: 3
+  features: 64
+  lambda_l1: 10.0
+
+training:
+  epochs: 50
+  lambda_l1: 30.0
+  lr: 0.0002
+  generator_lr: 0.0001
+  discriminator_lr : 0.00005
+  generator_beta1: 0.5
+  generator_beta2: 0.999
+  discriminator_beta1: 0.5
+  discriminator_beta2: 0.999
+  perceptual_weight: 0.05
+  save_dir: "checkpoints"
+  save_freq: 10
+  device: "cuda"
+  results_dir: "results"
+
+postprocessing:
+  sharpen: true
+  sharpen_radius: 1.0
+  sharpen_percent: 150
+  sharpen_threshold: 3
+
+demo:
+  model_path: "checkpoints/derm2real_gen.pth"
