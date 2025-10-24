@@ -1,4 +1,4 @@
-# Pix2Pix: Turning Sketch into Remnant style images using GAN
+# Pix2Pix: Turning Sketch into Rembrandt Style images using GAN
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
@@ -35,5 +35,6 @@ This project is an implementation of **Pix2Pix conditional GAN** to transform so
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6b8c73e9-1730-4944-93fb-b6c1da772c61" alt="Epoch 50" width="900">
 </div>
+
 
 
